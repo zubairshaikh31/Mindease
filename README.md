@@ -39,7 +39,7 @@ This is a hackathon MVP. Some features like real-time face emotion detection and
 
 ## 📸 Demo
 
-(Add video link here)
+(https://drive.google.com/file/d/1arr56rnZtldeSmjfHM2y-EZQB4CARWRW/view?usp=sharing)
 
 ---
 
