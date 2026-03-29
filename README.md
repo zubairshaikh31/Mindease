@@ -1,65 +1,46 @@
-# 🌿 MindEase Enhanced — HackToon 1.0 UPGRADED
+# MindEase 🌿
 
-## What's New (vs Original)
+An emotion-aware AI mental health assistant that understands how you feel and responds like a supportive companion.
 
-### 🎤 Full-Duplex Voice
-- Browser SpeechRecognition auto-sends after speech
-- Language-aware: switches to hi-IN for Hindi/Hinglish
-- TTS auto-speaks every AI response (calm tone, 0.88 rate)
-- Stop button to interrupt speech
-- Visual "talking..." indicator with pulsing ring on avatar
+## 🚀 Features
 
-### 📷 Face Emotion Detection
-- face-api.js loaded from CDN (no install needed)
-- TinyFaceDetector + FaceExpressionNet
-- Runs every 1.5s, smoothed over 4 frames (no flicker)
-- Toggle camera with 📷 button in header
-- Face emotion fused with text emotion in backend
+- 💬 Emotion-aware chat (text-based)
+- 🎤 Voice interaction
+- 🎥 Facial emotion detection
+- 🌐 Multilingual (English, Hindi, Hinglish)
+- 🔒 Privacy-first (runs locally, no data sharing)
+- 🧠 Hybrid NLP + Local LLM (Ollama)
 
-### 🌐 Multi-Language Intelligence
-- Hindi (Devanagari) → responds in Hindi
-- Hinglish (mixed) → responds in Hinglish  
-- English → responds in English
-- Language pill shown in header
-- Speech recognition switches locale automatically
+## 🧠 How It Works
 
-### 🧠 Emotion Fusion
-- Text (50%) + Face (35%) + Voice (15%) weighted fusion
-- MULTI-SIGNAL ✓ badge when camera + text agree
-- Backend /api/fuse_emotion endpoint
-- Boosted confidence when signals agree
+MindEase analyzes:
+- Your text
+- Your voice tone
+- Your facial expressions
 
-### 📈 Mood Trend
-- Bar chart in journal showing last 7 moods
-- /api/mood_trend endpoint
+Then adapts responses based on your emotional state.
 
-### UI Enhancements
-- Face camera panel in chat + detection tabs
-- Speaking indicator in header
-- Language badge
-- Enhanced crisis: "Find Help Near Me" + "Alert Trusted Contact"
-- Breathing circle with glow animation
+## 🎯 Use Case
 
-## Setup (Same as Before)
+- College students under stress
+- Mental health support
+- Self-reflection & emotional awareness
 
-```bash
-# Backend
-cd backend
-pip install flask flask-cors requests
-python app.py
+## 🛠 Tech Stack
 
-# Frontend
-cd frontend
-npm install
-npm start
-```
+- Frontend: React 18
+- Backend: Python Flask
+- AI: Ollama (Llama 3.2)
+- Face Detection: face-api.js
 
-## API (All Original Endpoints Preserved)
-- GET  /api/health
-- POST /api/chat         ← now accepts face_emotion, face_conf
-- POST /api/analyze
-- GET/POST /api/journal
-- GET  /api/grounding
-- POST /api/fuse_emotion ← NEW
-- GET  /api/mood_trend   ← NEW
+## ⚠️ Note
 
+This is a hackathon MVP. Some features like real-time face emotion detection and voice interaction are still being improved.
+
+## 📸 Demo
+
+(Add video link here)
+
+---
+
+Built with ❤️ by Zubair
